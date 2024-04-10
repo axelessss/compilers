@@ -1,0 +1,6 @@
+F:\универ\3 курс\6 семак\ТФЯиК\лаб2\Scanner\bin\Debug\Scanner.dll
+F:\универ\3 курс\6 семак\ТФЯиК\лаб2\Scanner\bin\Debug\Scanner.pdb
+F:\универ\3 курс\6 семак\ТФЯиК\лаб2\Scanner\obj\Debug\Scanner.csproj.AssemblyReference.cache
+F:\универ\3 курс\6 семак\ТФЯиК\лаб2\Scanner\obj\Debug\Scanner.csproj.CoreCompileInputs.cache
+F:\универ\3 курс\6 семак\ТФЯиК\лаб2\Scanner\obj\Debug\Scanner.dll
+F:\универ\3 курс\6 семак\ТФЯиК\лаб2\Scanner\obj\Debug\Scanner.pdb
