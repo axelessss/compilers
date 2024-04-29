@@ -65,11 +65,12 @@
 
 √рамматика G[ ]: Vt = { СfuncТ,СaТЕТzТ, СAТЕТZТ, С0ТЕТ9Т, С,Т , С+Т, С-С, С*С, С/С, С=Т , С(Т , С)Т, С{Т, '}'}
  
-Vn = { , iD , ASSIGN , SIGN1,SIGN2, DECMAL1,DECMAL2,DECMAL1REM,DECMAL2REM, OPENBRACKET,CLOSEBRACKET , NUMBER1,NUMBER1REM,NUMBER2,NUMBER2REM} 
+Vn = {ID, ASSIGN, OPENBRACKET, CLOSEBRACKET, INT, COMMA, OPENBRACE, CLOSEBRACE, ENDLINE, RETURN} 
 
 P = { 1. ? СfuncТ ASSIGN 2.ASSIGN ? letter ID 3.ID -> OPENBRACKET 4.OPENBRACKET -> letter ID 5.ID ? (COMMA -> ID -> INT)|INT 6.INT -> CLOSEBRACKET 7.CLOSEBRACKET -> (ENDLINE -> OPENBRACE) | OPENBRACE 8.OPENBRACE -> (ENDLINE -> RETURN)|RETURN 9.RETURN -> CLOSEBRACE|ID 10.ID -> (CLOSEBRACE|'+' ID|ENDLINE 11.ID -> CLOSEBRACE|ENDLINE 12.ENDLINE -> CLOSEBRACE 
-2)ѕримеры верных строк: 
-func X(x int){return}
+2)ѕримеры верных строк:
+ 
+func X (x int){return}
 
 func add(x, y int)int
 {
