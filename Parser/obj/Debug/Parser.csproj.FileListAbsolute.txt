@@ -1,0 +1,9 @@
+F:\универ\3 курс\6 семак\ТФЯиК\лаб3\Parser\bin\Debug\Parser.dll
+F:\универ\3 курс\6 семак\ТФЯиК\лаб3\Parser\bin\Debug\Parser.pdb
+F:\универ\3 курс\6 семак\ТФЯиК\лаб3\Parser\bin\Debug\Scanner.dll
+F:\универ\3 курс\6 семак\ТФЯиК\лаб3\Parser\bin\Debug\Scanner.pdb
+F:\универ\3 курс\6 семак\ТФЯиК\лаб3\Parser\obj\Debug\Parser.csproj.AssemblyReference.cache
+F:\универ\3 курс\6 семак\ТФЯиК\лаб3\Parser\obj\Debug\Parser.csproj.CoreCompileInputs.cache
+F:\универ\3 курс\6 семак\ТФЯиК\лаб3\Parser\obj\Debug\Parser.csproj.CopyComplete
+F:\универ\3 курс\6 семак\ТФЯиК\лаб3\Parser\obj\Debug\Parser.dll
+F:\универ\3 курс\6 семак\ТФЯиК\лаб3\Parser\obj\Debug\Parser.pdb
