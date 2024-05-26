@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Грамматика</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Грамматика</h1>
+    <div class="grammar">
+    G[&lt;ЦК&gt; = &lt;целочисленная константа&gt;]:<br>
+    V<sub>T</sub> = { 'function', 'return', '&emsp;', '$', ' { ', ' } ', ' ( ', ' ) ', 'a'…'z', 'A'…'Z', '0'…'9', '+', '-', '*', '/' }<br>
+    V<sub>N</sub> = { &lt;DEF&gt;, SPACE, FUNCNAME, FUNCNAMEREM, ARG, ARGNAME, ARGNAMEREM, FUNCOPEN, RETURN, ARG1, ARG1NAME, ARG1NAMEREM, ARG2, ARG2NAME, ARG2NAMEREM, END, letter, digit }<br>
+    P = {
+    1. &lt;DEF&gt; → 'function' SPACE <br>
+    &emsp; &emsp;2. SPACE → '&emsp;' FUNCNAME <br>
+    &emsp; &emsp;3. FUNCNAME → (letter | '_') FUNCNAMEREM <br>
+    &emsp; &emsp;4. FUNCNAMEREM → (letter | digit | '_') FUNCNAMEREM | ' ( ' ARG <br>
+    &emsp; &emsp;5. ARG → '$' ARGNAME <br>
+    &emsp; &emsp;6. ARGNAME  → (letter | '_') ARGNAMEREM <br>
+    &emsp; &emsp;7. ARGNAMEREM → (letter | digit | '_') ARGNAMEREM | ' , ' ARG | ' ) ' FUNCOPEN <br>
+    &emsp; &emsp;8. FUNCOPEN → ' { ' RETURN <br>
+    &emsp; &emsp;9. RETURN → 'return' ARG1 <br>
+    &emsp; &emsp;10. ARG1 →'$' ARG1NAME <br>
+    &emsp; &emsp;11. ARG1NAME → (letter | '_') ARG1NAMEREM | ( ' + ' | ' - ' | ' * ' | ' / ' ) ARG2 <br>
+    &emsp; &emsp;12. ARG1NAMEREM → (letter | digit | '_') ARG1NAMEREM | ( ' + ' | ' - ' | ' * ' | ' / ' ) ARG2 <br>
+    &emsp; &emsp;13. ARG2 →'$' ARG2NAME <br>
+    &emsp; &emsp;14. ARG2NAME → (letter | '_') ARG2NAMEREM <br>
+    &emsp; &emsp;15. ARG2NAMEREM → (letter| digit | '_') ARG1NAMEREM | ' ; ' END <br>
+    &emsp; &emsp;16. END → ' } ' <br>
+    &emsp; &emsp;17. digit → '0' | '1' | ... | '9' <br>
+    &emsp; &emsp;18. letter → 'a' | ... | 'z' | 'A' | ... | 'Z' <br>
+    &emsp; }
+    </div>
+</body>
+</html>

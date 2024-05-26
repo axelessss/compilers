@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Постановка задачи</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Постановка задачи</h1>
+
+    <h2>Оглавление</h2>
+    <ul>
+        <li><a href="#тема-работы">Тема работы</a></li>
+        <li><a href="#особенности-языка">Особенности языка</a></li>
+        <li><a href="#примеры-верных-строк">Примеры верных строк из языка</a></li>
+    </ul>
+
+    <h2 id="тема-работы">Тема работы</h2>
+    <p>Разработка текстового редактора с функциями языкового процессора. Создание функции языка PHP</p>
+
+    <h2 id="особенности-языка">Особенности языка</h2>
+    <p>Функции в PHP - это блоки кода, которые могут быть вызваны для выполнения определенной операции. Они могут принимать аргументы, обрабатывать их и возвращать результат. Для объявления функции в PHP используется ключевое слово function, за которым следует имя функции и список параметров в круглых скобках. Функция может быть объявлена глобально или внутри другой функции или класса.</p>
+    <p>Формат записи функции в PHP:</p>
+
+    <pre><code class="language-sql">function имя_функции($параметр1, $параметр2, ...) {
+        // Тело функции
+        return $результат;
+    }</code></pre>
+
+    <h2 id="примеры-верных-строк">Примеры верных строк из языка</h2>
+
+    <p>В соответствии с разработанной автоматной грамматикой синтаксический анализатор (парсер) функций PHP будет считать верными следующие записи:</p>
+
+    <pre><code class="language-sql">function sum($a, $b) {
+        return $a + $b;
+    }</code></pre>
+
+    <pre><code class="language-sql">function sum($c, $d) {
+        return $a - $b;</code></pre>
+
+    <pre><code class="language-sql">function sum($f) {
+        return $f;</code></pre>
+
+    <pre><code class="language-sql">function sum($t, $v) {
+        return $t * $v;</code></pre>
+
+    <pre><code class="language-sql">function sum($m, $n) {
+        return $m / $n;</code></pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-sql.min.js"></script>
+
+</body>
+</html>
