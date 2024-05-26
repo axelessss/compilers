@@ -13,13 +13,13 @@ namespace Parse
     public partial class Parser
     {
 
-        private string input;
-        private int position;
-        private List<ParserError> errors;
+        public string input;
+        public int position;
+        public List<ParserError> errors;
         public bool IsLeftPartofParMet = false; // для скобок
         public bool IsLeftPartofCurlyMet = false; // для фигурных скобок
         public bool LastState = false; // для фигурных скобок
-        private string errors_list;
+        public string errors_list;
 
         public string ErrorsList { get => errors_list; }
         public Parser(string input)
